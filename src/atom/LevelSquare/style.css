@@ -1,0 +1,16 @@
+.level-square>i.icon {
+    height: 1.5rem;
+    transition: transform 400ms ease-in-out;
+    -webkit-transition: transform 400ms ease-in-out;
+    -moz-transition: transform 400ms ease-in-out;
+    -ms-transition: transform 400ms ease-in-out;
+    -o-transition: transform 400ms ease-in-out;
+}
+
+.level-square>i.icon:hover {
+    transform: scale(1.3) !important;
+    -webkit-transform: scale(1.3) !important;
+    -moz-transform: scale(1.3) !important;
+    -ms-transform: scale(1.3) !important;
+    -o-transform: scale(1.3) !important;
+}

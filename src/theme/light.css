@@ -1,0 +1,12 @@
+:root {
+    --background-color: #fff;
+    --accordion-background-color: white;
+    /* --box-color: #f9f9f9; */
+    --box-color: rgb(243, 243, 243);
+    --box-border-color: rgba(0, 0, 0, 0.1);
+    --box-box-shadow: 0 0 2px var(--box-border-color);
+    --header-color: #5a5a5a;
+    --text-color: rgba(0, 0, 0, .6);
+    --accordion-text-color: #707070;
+    --yellow-highlight-color: rgb(255, 248, 171);
+}

@@ -1,0 +1,9 @@
+.label-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-content>span:nth-child(2) {
+    font-weight: 300;
+    margin-top: 5px;
+}

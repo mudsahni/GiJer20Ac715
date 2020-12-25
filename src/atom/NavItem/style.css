@@ -1,0 +1,76 @@
+.menu-title>i.small.icon,
+.menu-title>i.small.icons {
+    /* float: right;
+    margin-left: auto; */
+    margin-left: 10px;
+
+}
+
+.menu-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.menu-title>span {
+    margin-left: 10px;
+    color: var(--header-color);
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.01rem;
+
+}
+
+.menu-title>.ui.mini.image,
+.menu-title>.ui.mini.images .image,
+.menu-title>.ui.mini.images img,
+.menu-title>.ui.mini.images svg {
+    width: 25px;
+}
+
+.menu-title:first-child {
+    margin-top: 0px;
+}
+
+
+.menu-title {
+    /* margin-top: 10px; */
+    height: 100%;
+    width: 100%;
+}
+
+
+.menu-title:hover {
+    /* text-decoration: underline; */
+}
+
+.menu-title {
+    /* height: 40px; */
+    padding: 15px;
+    margin-right: 15px;
+}
+
+.menu-title:hover {
+    border: 1px dashed var(--box-border-color);
+    border-radius: var(--box-border-radius);
+    -webkit-border-radius: var(--box-border-radius);
+    -moz-border-radius: var(--box-border-radius);
+    -ms-border-radius: var(--box-border-radius);
+    -o-border-radius: var(--box-border-radius);
+    background-color: white;
+}
+
+
+.menu-title-active {
+    border: 1px dashed var(--box-border-color);
+    border-radius: var(--box-border-radius);
+    -webkit-border-radius: var(--box-border-radius);
+    -moz-border-radius: var(--box-border-radius);
+    -ms-border-radius: var(--box-border-radius);
+    -o-border-radius: var(--box-border-radius);
+    background-color: white;
+
+}

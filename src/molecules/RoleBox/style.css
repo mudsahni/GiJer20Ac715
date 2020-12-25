@@ -1,0 +1,40 @@
+.role-box {
+    background-color: var(--box-color);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    padding: 15px;
+    margin-right: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.role-box>div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.role-box>div>span:first-child {
+    font-weight: 500;
+}
+
+.role-box>div>span {
+    color: var(--header-color);
+}
+
+.active-role-box {
+    background-color: var(--header-color);
+}
+
+
+.active-role-box>div>span {
+    color: #fff;
+}
+
+.active-role-box>div>span {
+    color: #fff;
+}

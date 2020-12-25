@@ -1,0 +1,6 @@
+.level-squares {
+    margin-left: auto;
+    float: right;
+    display: flex;
+    flex-direction: row;
+}

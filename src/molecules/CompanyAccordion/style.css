@@ -1,0 +1,10 @@
+.role-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.accordion-content-content {
+    text-align: justify;
+    text-justify: inter-word;
+
+}

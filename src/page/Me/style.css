@@ -1,0 +1,99 @@
+.accordion-content-content>div>.ui.bulleted.list .list>.item,
+.accordion-content-content>div>.ui.bulleted.list>.item,
+.accordion-content-content>div>ul.ui.list li {
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: transform 400ms ease-in-out, background-color 400ms ease-in-out;
+    -webkit-transition: transform 400ms ease-in-out, background-color 400ms ease-in-out;
+    -moz-transition: transform 400ms ease-in-out, background-color 400ms ease-in-out;
+    -ms-transition: transform 400ms ease-in-out, background-color 400ms ease-in-out;
+    -o-transition: transform 400ms ease-in-out, background-color 400ms ease-in-out;
+}
+
+.accordion-content-content>div>.ui.bulleted.list .list>.item:hover,
+.accordion-content-content>div>.ui.bulleted.list>.item:hover,
+.accordion-content-content>div>ul.ui.list li:hover {
+    /* background-color: var(--box-color);
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01); */
+}
+
+.item>.content>.description {}
+
+div .ui.label {
+    margin-bottom: 10px;
+}
+
+.vertical-padding-container {
+    padding: 3vh 0vw 2vh 0vw;
+}
+
+
+.mudit-logo {
+    display: flex;
+    flex-direction: row;
+    font-weight: 300;
+    font-size: 4.5rem;
+    line-height: 4rem;
+    letter-spacing: -0.5rem;
+    color: var(--header-color);
+    cursor: pointer;
+}
+
+.mudit-logo>span:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.me-box-container {
+    /* background-color: var(--box-color); */
+    /* height: 500px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 64px 24px 64px 24px;
+    border-radius: var(--box-border-radius);
+    -webkit-border-radius: var(--box-border-radius);
+    -moz-border-radius: var(--box-border-radius);
+    -ms-border-radius: var(--box-border-radius);
+    -o-border-radius: var(--box-border-radius);
+}
+
+
+.highlighted-word {
+    background-color: var(--yellow-highlight-color);
+}
+
+.section-separator {
+    width: 300px;
+    border-top: 1px solid var(--box-border-color);
+    margin-bottom: 60px;
+}
+
+.ui.divider {
+    margin: 0px;
+}
+
+.ui.label {
+    background-color: var(--box-color);
+    font-weight: 500;
+}
+
+.divide-by-borders-grid-column {
+    border-left: 1px solid var(--box-border-color);
+}
+
+
+@media only screen and (max-width: 768px) {
+    .divide-by-borders-grid-column {
+        border-left: none;
+        border-top: 1px solid var(--box-border-color);
+    }
+
+}

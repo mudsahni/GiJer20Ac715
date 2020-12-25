@@ -1,0 +1,82 @@
+[
+    {
+        "$id": "https://ns.adobe.com/<XDM_TENANTID_PLACEHOLDER>/mixins/f2002c32ce3a5a66da2c41e3e5bb30c9a4380f2056fb6fd1",
+        "meta:altId": "_<XDM_TENANTID_PLACEHOLDER>.mixins.f2002c32ce3a5a66da2c41e3e5bb30c9a4380f2056fb6fd1",
+        "meta:resourceType": "mixins",
+        "version": "1.0",
+        "title": "Clickstream20201126",
+        "type": "object",
+        "description": "EG Clickstream Mixin created on 2020-11-26",
+        "definitions": {
+            "customFields": {
+                "type": "object",
+                "properties": {
+                    "_<XDM_TENANTID_PLACEHOLDER>": {
+                        "type": "object",
+                        "properties": {
+                            "t": {
+                                "title": "t",
+                                "description": "",
+                                "type": "string",
+                                "isRequired": false,
+                                "meta:xdmType": "string"
+                            }
+                        },
+                        "meta:xdmType": "object"
+                    }
+                },
+                "meta:xdmType": "object"
+            }
+        },
+        "allOf": [
+            {
+                "$ref": "#/definitions/customFields",
+                "type": "object",
+                "meta:xdmType": "object"
+            }
+        ],
+        "meta:extensible": true,
+        "meta:abstract": true,
+        "meta:intendedToExtend": [],
+        "meta:xdmType": "object",
+        "meta:sandboxId": "c3ab0240-e3de-11e9-8f5d-7f27416c5f0d",
+        "meta:sandboxType": "production"
+    },
+    {
+        "$id": "https://ns.adobe.com/<XDM_TENANTID_PLACEHOLDER>/schemas/a2f0b2e8a713e74b8b3dc3fb16288baa0dcd6e6b39b0f2ab",
+        "meta:altId": "_<XDM_TENANTID_PLACEHOLDER>.schemas.a2f0b2e8a713e74b8b3dc3fb16288baa0dcd6e6b39b0f2ab",
+        "meta:resourceType": "schemas",
+        "version": "1.0",
+        "title": "EGClickstream20201126",
+        "type": "object",
+        "description": "",
+        "allOf": [
+            {
+                "$ref": "https://ns.adobe.com/xdm/context/experienceevent",
+                "type": "object",
+                "meta:xdmType": "object"
+            },
+            {
+                "$ref": "https://ns.adobe.com/<XDM_TENANTID_PLACEHOLDER>/mixins/f2002c32ce3a5a66da2c41e3e5bb30c9a4380f2056fb6fd1",
+                "type": "object",
+                "meta:xdmType": "object"
+            }
+        ],
+        "required": [
+            "@id",
+            "xdm:timestamp"
+        ],
+        "meta:extensible": false,
+        "meta:abstract": false,
+        "meta:extends": [
+            "https://ns.adobe.com/xdm/data/time-series",
+            "https://ns.adobe.com/<XDM_TENANTID_PLACEHOLDER>/mixins/f2002c32ce3a5a66da2c41e3e5bb30c9a4380f2056fb6fd1",
+            "https://ns.adobe.com/xdm/context/identitymap",
+            "https://ns.adobe.com/xdm/context/experienceevent"
+        ],
+        "meta:xdmType": "object",
+        "meta:class": "https://ns.adobe.com/xdm/context/experienceevent",
+        "meta:sandboxId": "c3ab0240-e3de-11e9-8f5d-7f27416c5f0d",
+        "meta:sandboxType": "production"
+    }
+]

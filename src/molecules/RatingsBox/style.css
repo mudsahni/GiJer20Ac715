@@ -1,0 +1,33 @@
+.ratings-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.ratings-container>h4.ui.header {
+    color: var(--header-color);
+    letter-spacing: 0.01rem;
+}
+
+.ratings {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--header-color);
+    margin-bottom: 10px;
+    height: 30px;
+}
+
+/* .ratings>span:hover {
+    filter: contrast(2);
+    -webkit-filter: contrast(2);
+} */
+
+.ratings>.ui.mini.image,
+.ratings>.ui.mini.images .image,
+.ratings>.ui.mini.images img,
+.ratings>.ui.mini.images svg {
+    margin-left: -1px;
+    margin-right: 5px;
+    width: 18px;
+}

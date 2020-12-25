@@ -1,0 +1,19 @@
+.ratings>a>.ui.header .content {
+    color: var(--header-color);
+}
+
+.ratings>a>.ui.header .content>.sub.header {
+    /* color: pink; */
+}
+
+.ratings>a>.ui.header .content:hover {
+    text-decoration: underline;
+    filter: contrast(2);
+    -webkit-filter: contrast(2);
+}
+
+.ratings>a>.ui.header .content:active {
+    text-decoration: underline;
+    filter: contrast(5);
+    -webkit-filter: contrast(5);
+}
