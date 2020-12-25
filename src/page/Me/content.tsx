@@ -419,8 +419,8 @@ export const expediaExperience = {
                     active: false
                 },
                 {
-                    key: "sdei",
-                    role: "Software Development Engineer I",
+                    key: "sde",
+                    role: "Software Development Engineer",
                     date: "Mar 2019—",
                     team: "Behaviour Experimentation Platform",
                     active: true

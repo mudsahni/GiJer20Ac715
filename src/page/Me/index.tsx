@@ -94,6 +94,9 @@ export const Me: React.FC<MeProps> = ({ }) => {
 
                             <SkillsBox data={{ title: "programming languages", skills: languages }} />
                             <OtherBox data={{ title: "projects", skills: projectsData }} />
+
+
+
                             <OtherBox data={{ title: "certifications", skills: certificates }} />
 
                             <SkillsBox data={{ title: "languages", skills: ["English", "Hindi"] }} />
