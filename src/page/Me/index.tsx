@@ -127,7 +127,20 @@ export const Me: React.FC<MeProps> = ({ }) => {
             </Container>
             <Divider />
 
+            <Container>
 
+                <Grid stackable>
+                    <Grid.Row>
+                        <Grid.Column width={16}>
+                            <div className="footer">
+                                <span>impatiently created by</span>
+                                <span className="highlighted-word"><a href="http://www.muditsahni.com" target="_blank">mudit sahni</a></span>
+                            </div>
+                        </Grid.Column>
+
+                    </Grid.Row>
+                </Grid>
+            </Container>
         </React.Fragment >
         // </Container>
 

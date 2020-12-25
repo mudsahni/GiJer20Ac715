@@ -8,6 +8,18 @@
     padding-bottom: 10px;
 }
 
+@media only screen and (max-width: 400) {
+    .me-box>.ui.image.header {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
 .me-box>.ui.header>.image+.content,
 .me-box>.ui.header>img+.content {
     color: var(--header-color);
