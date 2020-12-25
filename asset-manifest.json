@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/GiJer20Ac715/static/css/main.ac9a0430.chunk.css",
-    "main.js": "/GiJer20Ac715/static/js/main.cb87ec3d.chunk.js",
-    "main.js.map": "/GiJer20Ac715/static/js/main.cb87ec3d.chunk.js.map",
+    "main.css": "/GiJer20Ac715/static/css/main.38aeef1c.chunk.css",
+    "main.js": "/GiJer20Ac715/static/js/main.69d40fb4.chunk.js",
+    "main.js.map": "/GiJer20Ac715/static/js/main.69d40fb4.chunk.js.map",
     "runtime-main.js": "/GiJer20Ac715/static/js/runtime-main.9d9a1724.js",
     "runtime-main.js.map": "/GiJer20Ac715/static/js/runtime-main.9d9a1724.js.map",
     "static/css/2.ca5de6bf.chunk.css": "/GiJer20Ac715/static/css/2.ca5de6bf.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.6a9636dd.chunk.js.map": "/GiJer20Ac715/static/js/3.6a9636dd.chunk.js.map",
     "index.html": "/GiJer20Ac715/index.html",
     "static/css/2.ca5de6bf.chunk.css.map": "/GiJer20Ac715/static/css/2.ca5de6bf.chunk.css.map",
-    "static/css/main.ac9a0430.chunk.css.map": "/GiJer20Ac715/static/css/main.ac9a0430.chunk.css.map",
+    "static/css/main.38aeef1c.chunk.css.map": "/GiJer20Ac715/static/css/main.38aeef1c.chunk.css.map",
     "static/js/2.97c9deca.chunk.js.LICENSE.txt": "/GiJer20Ac715/static/js/2.97c9deca.chunk.js.LICENSE.txt",
     "static/media/semantic.min.css": "/GiJer20Ac715/static/media/outline-icons.ddae9b1b.woff"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.9d9a1724.js",
     "static/css/2.ca5de6bf.chunk.css",
     "static/js/2.97c9deca.chunk.js",
-    "static/css/main.ac9a0430.chunk.css",
-    "static/js/main.cb87ec3d.chunk.js"
+    "static/css/main.38aeef1c.chunk.css",
+    "static/js/main.69d40fb4.chunk.js"
   ]
 }
