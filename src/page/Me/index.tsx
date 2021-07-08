@@ -90,20 +90,23 @@ export const Me: React.FC<MeProps> = ({ }) => {
                 <Grid stackable>
                     <Grid.Row>
                         <Grid.Column width={5}>
+                        <SkillsBox data={{ title: "programming languages", skills: languages }} />
+
                             <SkillsBox data={{ title: "frameworks", skills: frameworks }} />
 
-                            <SkillsBox data={{ title: "programming languages", skills: languages }} />
                             <OtherBox data={{ title: "projects", skills: projectsData }} />
-
 
 
                             <OtherBox data={{ title: "certifications", skills: certificates }} />
 
                             <SkillsBox data={{ title: "languages", skills: ["English", "Hindi"] }} />
-                            <SkillsBox data={{
+                            {
+                            /* TODO: Comment in later */
+
+                            /* <SkillsBox data={{
                                 title: "interests", skills: ["Astronomy", "Computer Science", "Literature", "History", "Biology",
                                     "Game Development", "Simulation", "Digital Illustration", "Neuroscience"]
-                            }} />
+                            }} /> */}
 
                         </Grid.Column>
 
@@ -135,10 +138,10 @@ export const Me: React.FC<MeProps> = ({ }) => {
                 <Grid stackable>
                     <Grid.Row>
                         <Grid.Column width={16}>
-                            <div className="footer">
+                            {/* <div className="footer">
                                 <span>impatiently created by</span>
                                 <span className="highlighted-word"><a href="http://www.muditsahni.com" target="_blank">mudit sahni</a></span>
-                            </div>
+                            </div> */}
                         </Grid.Column>
 
                     </Grid.Row>

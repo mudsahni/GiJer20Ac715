@@ -4,15 +4,15 @@ import { Icon, Item, Label, List } from "semantic-ui-react"
 export const MeData = {
     name: "mudit sahni",
     profile: "software engineer",
-    about: <div><p>In my near seven years of professional employment, I've had the opportunity to help build high-impact data centric products
+    about: <div><p>In my near eight years of professional employment, I've had the opportunity to help build high-impact data centric products
     for organizations which are leaders in the domains of research advisory, and travel respectively. My work has helped enable, scale, and standardize
-    online experimentation for a large e-commerce company with an average of <span className="highlighted-word">{">"}40,000 active A/B tests</span> running at any point,
-    drive in <span className="highlighted-word">~$4.5 million of revenue</span> by creating web products for client-side survey analysis and benchmarking,
-     and drive organization-wide research studies through the implementation of <span className="highlighted-word">machine learning models for quantitative and qualitative analysis</span> for a research company.</p>
-        <p>I'm chasing ‘fluency’ in subjects I love. I try and use all my free time to read and learn about a wide
+    online experimentation for a large e-commerce company with an average of {">"}40,000 active A/B tests running at any point,
+    drive in ~$4.5 million of revenue by creating web products for client-side survey analysis and benchmarking,
+     and drive organization-wide research studies through the implementation of technology based solutions for research problems.</p>
+        {/* <p>I'm chasing ‘fluency’ in subjects I love. I try and use all my free time to read and learn about a wide
         variety of things—from the sciences to literature to history and culture—and all my work time trying to find ways in applying what I've learnt to build
-        something useful. <span className="highlighted-word">I find myself extremely fortunate that what I find fun, entertaining, and fullfilling is also my profession.</span>
-        </p>
+        something useful. I find myself extremely fortunate that what I find fun, entertaining, and fullfilling is also my profession.
+        </p> */}
     </div >
 }
 
@@ -23,8 +23,9 @@ export const languages = [
     "TypeScript",
     "JavaScript",
     "SQL",
-    "C++",
-    "R"
+    "R",
+    "HTML",
+    "CSS"
 ]
 export const languageRatings = [
     { icon: "python.png", title: "Python", rating: 5, popup: "The language which made me re-discover programming in the right way. My true love." },
@@ -74,19 +75,27 @@ export const certificates = [
 
 
 export const projectsData = [
-    { title: "Sorting Visualisation", subtitle: "August 2020", link: "#" },
-    { title: "Path Fingind Visualisation", subtitle: "August 2020", link: "#" },
-    { title: "Image detection Deep Learning Model", subtitle: "", link: "#" }
+    { title: "Sorting Visualisation", subtitle: "August 2020", link: "https://mudsahni.github.io/SortingVisualizer/" },
+    { title: "EG Clickstream Spark Pipeline", subtitle: "January 2021", link: "https://github.expedia.biz/Boomdata/clickstream_aep_spark_job.git" },
+    { title: "Java Spring Boot REST API ", subtitle: "January 2021", link: "https://github.expedia.biz/Boomdata/aep_brain_api.git" },
+    { title: "EG Traveler Backend", subtitle: "Q4 2019-Q1 2020", link: "https://github.expedia.biz/Boomdata/eg-traveler-api.git"},
+    { title: "Toxic Sentence Detection", subtitle: "August 2020", link: "https://mudsahni.github.io/toxicSentenceDetector/" },
+    { title: "A/B Testing Pipeline ", subtitle: "June 2018", link: "https://github.expedia.biz/Boomdata/EGTnL.git" },
+
+    
 ]
 export const frameworkRatings = [
     { icon: "pandas.svg", title: "Pandas", rating: 5 },
     { icon: "react.png", title: "React", rating: 4 },
     { icon: "tensorflow.png", title: "Tensorflow", rating: 4 },
-    { icon: "spark.png", title: "Spark", rating: 3 },
+    { icon: "spark.png", title: "Apache Spark", rating: 3 },
     { icon: "graphql.png", title: "GraphQL", rating: 3 },
     { icon: "pytorch.png", title: "PyTorch", rating: 2 },
     { icon: "flask.svg", title: "Flask", rating: 2 },
-
+    { icon: "flask.svg", title: "Numpy", rating: 2 },
+    { icon: "flask.svg", title: "Prisma", rating: 2 },
+    { icon: "flask.svg", title: "NLTK", rating: 2 },
+    { icon: "flask.svg", title: "Scikit-learn", rating: 2 },
 ]
 
 export const frameworks = [
@@ -99,29 +108,19 @@ export const frameworks = [
     "Flask",
     "AWS",
     "Azure",
-    "SQL",
-    "NoSQL"
+    "MongoDB",
+    "NLTK",
+    "Prisma",
+    "Highcharts.js",
+    "Three.js"
 ]
 
 export const tags = [
-    "Machine Learning",
-    "Deep Learning",
-    "Product",
-    "Full Stack Development",
-    "A/B Testing",
-    "Convolutional Neural Networks",
-    "Residual Neural Networks",
-    "Generative Adversarial Networks",
-    "Data Analysis",
     "Data Engineering",
-    "Statistics",
-    "Visualization",
-    "Automation",
-    "Artificial Neural Networks",
-    "Big Data",
-    "Simulation",
-    "Back-end Development",
-    "Font-end Development"
+    "Data Visualisation",
+    "Web Development",
+    "Machine Learning",
+    "Deep Learning"
 ]
 
 export const schoolPanel = {
@@ -200,7 +199,7 @@ export const gartnerExperience = {
 
                 <em>
                     Overhauled the client-facing data reporting and visualization products for research teams across multiple domains, and
-                    enabled faster and smarter research through the development of algorithmic and machine learning based solutions to research problems.
+                    enabled faster and smarter research through the development of technological solutions for research problems.
         </em>
                 <List bulleted>
                     <List.Item>
@@ -209,15 +208,15 @@ export const gartnerExperience = {
 
                                 <Item.Description>
                                     <p>
-                                        Increased revenue for a multi-domain client-facing custom survey analysis and reporting product to <span className="highlighted-word">~$4.5 million</span>&nbsp;
+                                        Increased revenue for several multi-domain client-facing custom survey analysis and reporting products by an average of 3 folds
                                          by updating a limited capability excel based product into a web based data reporting and visualization dashboard
                                         with advanced analytical capabilities.
                                     </p>
                                     <div>
                                         <Label icon="trophy" content="Gartner Innovation of the Year (2017)" size="small"></Label>
 
-                                        <Label content="Python" size="small"></Label>
-                                        <Label content="Flask" size="small"></Label>
+                                        <Label content="JavaScript" size="small"></Label>
+                                        <Label content="React" size="small"></Label>
                                         <Label content="Highcharts.js" size="small"></Label>
                                         <Label content="NoSQL" size="small"></Label>
                                         <Label content="MongoDB" size="small"></Label>
@@ -225,8 +224,6 @@ export const gartnerExperience = {
                                         <Label content="Python Pandas" size="small"></Label>
                                         <Label content="Numpy" size="small"></Label>
                                         <Label content="Scikit-learn" size="small"></Label>
-                                        <Label content="Sole Developer" size="small"></Label>
-                                        <Label content="Q4 2016-Q2 2017" size="small"></Label>
 
                                     </div>
                                 </Item.Description>
@@ -239,7 +236,7 @@ export const gartnerExperience = {
 
                                 <Item.Description>
                                     <p>
-                                        Developing data collection pipelines, and running quantitative and qualitative models on public financial data, and news articles for <span className="highlighted-word">300+ organizations</span> for the update to
+                                        Developing data collection pipelines, and running quantitative and qualitative models on public financial data, and news articles for 300+ organisations for the update to
                                         the CEB (now, Gartner) driven "<a href="https://books.google.co.in/books/about/STALL_POINTS_Most_Companies_Stop_Growing.html?id=Fy6NPwAACAAJ&source=kp_book_description&redir_esc=y" target="_blank">Stall Points</a>" research.
                                     </p>
                                     <div>
@@ -251,14 +248,7 @@ export const gartnerExperience = {
                                         <Label content="Numpy" size="small"></Label>
                                         <Label content="Scikit-learn" size="small"></Label>
                                         <Label content="Tensorflow" size="small"></Label>
-                                        <Label content="Artificial Neural Networks" size="small"></Label>
-                                        <Label content="Recurrent Neural Networks" size="small"></Label>
-                                        <Label content="Statistics" size="small"></Label>
-                                        <Label content="Statistics" size="small"></Label>
-
                                         <Label content="Deep Learning" size="small"></Label>
-                                        <Label content="Machine Learning" size="small"></Label>
-                                        <Label content="Q1 2017-Q3 2017" size="small"></Label>
 
                                     </div>
                                 </Item.Description>
@@ -299,8 +289,7 @@ export const gartnerExperience = {
             content: <div>
 
                 <em>
-                    Developed infrastructure for a web analytics framework for digital content consumption on various Gartner websites along with a platform for data analysis and visualization;
-                    and created automations and tools to streamline and optimize the creation and publication of digital products.
+                    Developed the infrastructure for research teams to easily access web consumption data associated with domain specific digital products and evaluate their performance.  
         </em>
                 <List bulleted>
                     <List.Item>
@@ -310,7 +299,7 @@ export const gartnerExperience = {
                                 <Item.Description>
                                     <p>
                                         Helped optimize and inform the general research strategies of product teams across multiple domains
-                                        by creating a feedback mechanism through the reporting and analysis of user consumption data of Gartner's domain-specific digital products.<br></br>
+                                        by creating a feedback mechanism through the creation of a digital products consumption dashboard for data reporting and visualisation.<br></br>
                                         <br></br>
                                         eg. <a href="https://muditsahni.shinyapps.io/mudit/" target="_blank">https://muditsahni.shinyapps.io/mudit/</a> (populated with mock survey data)
                                     </p>
@@ -323,8 +312,6 @@ export const gartnerExperience = {
                                         <Label content="MongoDB" size="small"></Label>
                                         <Label content="Adobe Omniture" size="small"></Label>
                                         <Label content="dplyr" size="small"></Label>
-                                        <Label content="Sole Developer" size="small"></Label>
-                                        <Label content="Q2 2015-Q1 2016" size="small"></Label>
 
                                     </div>
                                 </Item.Description>
@@ -337,16 +324,14 @@ export const gartnerExperience = {
 
                                 <Item.Description>
                                     <p>
-                                        Enabled product teams to conduct ad-hoc analysis on user consumption for their
-                                        digital products by creating data pipelines from the data lake to different end points; and standadizing .
+                                        Enabled product teams to conduct ad-hoc analysis of user consumption of their products and have easy access to the data by collecting and 
+                                        joining various datasets.
                                     </p>
                                     <div>
 
                                         <Label content="Python" size="small"></Label>
                                         <Label content="SQL" size="small"></Label>
                                         <Label content="MS SQL Server" size="small"></Label>
-                                        <Label content="Sole Developer" size="small"></Label>
-                                        <Label content="Q4 2014-Q3 2016" size="small"></Label>
 
                                     </div>
                                 </Item.Description>
@@ -359,7 +344,7 @@ export const gartnerExperience = {
 
                                 <Item.Description>
                                     <p>
-                                        Reduced workhours required for creating and publishing a digital product <span className="highlighted-word">by ~500 hours per month</span> by
+                                        Reduced workhours required for creating and publishing a digital product by ~500 hours per month by
                                         creating automations for web development, data standardization, and digital publishing.
                                     </p>
                                     <div>
@@ -420,26 +405,51 @@ export const expediaExperience = {
                 },
                 {
                     key: "sde",
-                    role: "Software Development Engineer",
-                    date: "Mar 2019—",
+                    role: "Software Development Engineer I",
+                    date: "Mar 2019—Mar 2021",
+                    team: "Behaviour Experimentation Platform",
+                    active: false
+                },
+                {
+                    key: "de",
+                    role: "Data Engineer III",
+                    date: "Mar 2021—",
                     team: "Behaviour Experimentation Platform",
                     active: true
                 }
             ],
             content: <div>
-                <em>Leading the development of the experimentation analytics and reporting platform for the entire brand expedia,
-                    creating big data pipelines for clickstream analytics, and providing research and analytics support to product teams.</em>
+                <em>Leading the development of the experimentation analytics and reporting platform for the entire expedia organization
+                    by creating big data pipelines for clickstream analytics.</em>
 
                 {/* <div className="skills-box-title">significant projects</div> */}
                 <List bulleted>
+                <List.Item>
+                        <Item>
+                            <Item.Content>
+
+                                <Item.Description>
+                                    <p>Productionalised sending large amounts of data to Adobe Experience Platform by creating standardised, low code Spark templates.</p>
+                                    <div>
+
+                                        <Label content="Apache Spark" size="small"></Label>
+                                        <Label content="Scala" size="small"></Label>
+                                        <Label content="Java" size="small"></Label>
+                                        <Label content="SQL" size="small"></Label>
+
+                                    </div>
+                                </Item.Description>
+                            </Item.Content>
+                        </Item>
+                    </List.Item>
+
                     <List.Item>
                         <Item>
                             <Item.Content>
 
                                 <Item.Description>
-                                    <p>Provided accessiblity and availability for various A/B test datasets to
-                                    the <span className="highlighted-word">entire company</span> by creating Spark pipelines to collect, and standardize
-                                     data from a new data lake to various internal and external end points.</p>
+                                    <p>Provided easy accessibility and analysis for A/B experimentation by creating Apache Spark data pipelines to collect, coalesce, and standardize
+                                     various datasets (~1TB per day) from the org data lake to Adobe Experience Platform.</p>
                                     <div>
                                         <Label icon="trophy" content="Expedia 'My Hero!' Award" size="small"></Label>
 
@@ -447,33 +457,9 @@ export const expediaExperience = {
                                         <Label content="Scala" size="small"></Label>
                                         <Label content="Java" size="small"></Label>
                                         <Label content="SQL" size="small"></Label>
-                                        <Label content="AWS SNS" size="small"></Label>
                                         <Label content="AWS SQS" size="small"></Label>
-                                        <Label content="AWS S3" size="small"></Label>
-                                        <Label content="Apache Kafka" size="small"></Label>
-
-
-                                        <Label content="Sole Developer" size="small"></Label>
-                                        <Label content="Q3 2020" size="small"></Label>
 
                                     </div>
-                                </Item.Description>
-                            </Item.Content>
-                        </Item>
-                    </List.Item>
-                    <List.Item>
-                        <Item>
-                            <Item.Content>
-
-                                <Item.Description>
-                                    <p>Created a resource for the streamlined upkeep and update of json schemas being used for various datasets across the organisation.</p>
-                                    <div>
-                                        <Label content="Python" size="small"></Label>
-
-                                        <Label content="Sole Developer" size="small"></Label>
-                                        <Label content="Q2 2020" size="small"></Label>
-                                    </div>
-
                                 </Item.Description>
                             </Item.Content>
                         </Item>
@@ -484,20 +470,15 @@ export const expediaExperience = {
                             <Item.Content>
 
                                 <Item.Description>
-                                    <p><span className="highlighted-word">Helped 25,000+ employees</span> across the entire Expedia Group avail travel benefits by
-                                    designing and developing an internal website for coupon generation and use, account linking,
-                                        and internal financial tracking of employee travel benefits.</p>
+                                    <p>Enabled 25,000+ employees across the entire Expedia Group avail travel benefits by
+                                    revamping and developing an internal website for coupon generation and use, account linking,
+                                        and internal financial tracking of employee travel benefits. <a href="https://eg-traveler.com" target="_blank">https://eg-traveler.com</a></p>
                                     <div>
-                                        <Label content="TypeScript (NodeJS)" size="small"></Label>
+                                        <Label content="JavaScript" size="small"></Label>
                                         <Label content="ReactJS" size="small"></Label>
                                         <Label content="GraphQL" size="small"></Label>
                                         <Label content="Prisma" size="small"></Label>
                                         <Label content="PostgreSQL" size="small"></Label>
-                                        <Label content="AWS Fargate" size="small"></Label>
-                                        <Label content="Technical Product Manager" size="small"></Label>
-                                        <Label content="Lead Developer" size="small"></Label>
-                                        <Label content="Team Lead" size="small"></Label>
-                                        <Label content="Q4 2019-Q1 2020" size="small"></Label>
 
                                     </div>
 
@@ -512,23 +493,17 @@ export const expediaExperience = {
 
                                 <Item.Description>
                                     <p>Enabled product teams across Expedia Group to streamline, standardize and accelerate their A/B test analysis and call process
-                                    by creating a web platform providing data access, monitoring, analysis, and visualization
-                                        for <span className="highlighted-word">{">"}40,000 A/B tests</span> at any given point. </p>
+                                    by creating the backend for a data collection, standardisation, analysis, and visualisation platform
+                                        for {">"}40,000 A/B tests. </p>
                                     <div>
                                         <Label content="Python" size="small"></Label>
                                         <Label content="Python Pandas" size="small"></Label>
                                         <Label content="Numpy" size="small"></Label>
                                         <Label content="JavaScript (NodeJS)" size="small"></Label>
-                                        <Label content="ReactJS" size="small"></Label>
-                                        <Label content="D3.js" size="small"></Label>
-                                        <Label content="HTML" size="small"></Label>
-                                        <Label content="CSS" size="small"></Label>
 
                                         <Label content="REST" size="small"></Label>
                                         <Label content="MS SQL Server" size="small"></Label>
                                         <Label content="Azure" size="small"></Label>
-                                        <Label content="Sole Developer" size="small"></Label>
-                                        <Label content="Q3 2018-Q1 2019" size="small"></Label>
 
                                     </div>
 
@@ -542,7 +517,7 @@ export const expediaExperience = {
                             <Item.Content>
 
                                 <Item.Description>
-                                    <p>Improved A/B test data refresh rate by <span className="highlighted-word">{">"}40 times</span> (from one
+                                    <p>Improved A/B test data refresh rate by {">"}40 times (from one
                                     refresh a day to exccess of 40 refreshes a day) on the existing A/B test data reporting platform.</p>
                                     <div>
                                         <Label content="Python" size="small"></Label>
@@ -551,13 +526,26 @@ export const expediaExperience = {
                                         <Label content="REST" size="small"></Label>
                                         <Label content="MS SQL Server" size="small"></Label>
                                         <Label content="Azure" size="small"></Label>
-                                        <Label content="Sole Developer" size="small"></Label>
-                                        <Label content="Q1 2018-Q2 2018" size="small"></Label>
 
                                     </div>
 
                                 </Item.Description>
 
+                            </Item.Content>
+                        </Item>
+                    </List.Item>
+                    <List.Item>
+                        <Item>
+                            <Item.Content>
+
+                                <Item.Description>
+                                    <p>Enabled easy synchronisation of JSON schemas for various internal datasets with Adobe Experience Platform.</p>
+                                    <div>
+                                        <Label content="Python" size="small"></Label>
+
+                                    </div>
+
+                                </Item.Description>
                             </Item.Content>
                         </Item>
                     </List.Item>
