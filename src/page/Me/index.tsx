@@ -10,7 +10,7 @@ import {
     certificateData, expediaPanel,
     gartnerPanel, techMahindraPanel, languages,
     frameworks,
-    projectsData, certificates, expediaExperience, gartnerExperience, techmahindraExperience, universityPanel, schoolPanel
+    projectsData, certificates, expediaExperience, gartnerExperience, techmahindraExperience, universityPanel, schoolPanel, educationData
 } from './content';
 import { CVMainBox } from '../../molecules/CVMainBox';
 import { RegularBox } from '../../molecules/RegularBox';
@@ -92,7 +92,9 @@ export const Me: React.FC<MeProps> = ({ }) => {
                         <Grid.Column width={5}>
                         <SkillsBox data={{ title: "programming languages", skills: languages }} />
 
-                            <SkillsBox data={{ title: "frameworks", skills: frameworks }} />
+                            <SkillsBox data={{ title: "frameworks & tools", skills: frameworks }} />
+
+                            <OtherBox data={{ title: "education", skills: educationData }} />
 
                             <OtherBox data={{ title: "projects", skills: projectsData }} />
 
@@ -100,6 +102,7 @@ export const Me: React.FC<MeProps> = ({ }) => {
                             <OtherBox data={{ title: "certifications", skills: certificates }} />
 
                             <SkillsBox data={{ title: "languages", skills: ["English", "Hindi"] }} />
+
                             {
                             /* TODO: Comment in later */
 
@@ -120,13 +123,13 @@ export const Me: React.FC<MeProps> = ({ }) => {
                             <CompanyAccordion data={techMahindraPanel} /> */}
 
                             </CVMainBox>
-                            <CVMainBox title="education" >
+                            {/* <CVMainBox title="education" >
                                 <RoleBox content={universityPanel.data[0].positions[0]}></RoleBox>
                                 <RoleBox content={schoolPanel.data[0].positions[0]}></RoleBox>
 
 
                             </CVMainBox>
-
+ */}
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>

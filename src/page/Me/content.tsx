@@ -4,11 +4,13 @@ import { Icon, Item, Label, List } from "semantic-ui-react"
 export const MeData = {
     name: "mudit sahni",
     profile: "software engineer",
-    about: <div><p>In my near eight years of professional employment, I've had the opportunity to help build high-impact data centric products
-    for organizations which are leaders in the domains of research advisory, and travel respectively. My work has helped enable, scale, and standardize
-    online experimentation for a large e-commerce company with an average of {">"}40,000 active A/B tests running at any point,
-    drive in ~$4.5 million of revenue by creating web products for client-side survey analysis and benchmarking,
-     and drive organization-wide research studies through the implementation of technology based solutions for research problems.</p>
+    about: <div><p>In my near eight years of professional employment, I've had the opportunity to help build high-impact data-centric products for organizations that are 
+        leaders in travel and research {"&"} advisory. My work has helped Expedia create a new platform as a service (PaaS) business model; enable, scale, and 
+        standardize organization-wide A/B test analysis (with an average of {">"}40,000 active A/B tests running at any point) by creating a reporting platform. 
+        And for Gartner, I have helped increase cross-domain membership retention by ~20% by creating web products for client-side survey analysis and benchmarking.
+    .</p>
+
+     {/* and drive organization-wide research studies through the implementation of technology based solutions for research problems.</p> */}
         {/* <p>I'm chasing ‘fluency’ in subjects I love. I try and use all my free time to read and learn about a wide
         variety of things—from the sciences to literature to history and culture—and all my work time trying to find ways in applying what I've learnt to build
         something useful. I find myself extremely fortunate that what I find fun, entertaining, and fullfilling is also my profession.
@@ -17,6 +19,7 @@ export const MeData = {
 }
 
 export const languages = [
+    "Kotlin",
     "Python",
     "Java",
     "Scala",
@@ -48,6 +51,12 @@ export const languageRatings = [
 
 ]
 
+export const educationData = [
+    {title: "Bachelor of Technology, Information Technology", subtitle: "Amity University, Noida, UP, India (2009-2013)", link: "https://www.amity.edu/"},
+    {title: "Modern School, Barakhamba Road", subtitle: "(1996-2009)", link: "https://modernschool.net/"}
+
+]
+
 export const certificateData = [
     { title: "AI for Medical Diagnosis", id: "June 2020", link: "https://coursera.org/share/c5164032356c1ac8fc5fdf11a2e9fc65" },
     { title: "Introduction to TensorFlow", id: "December 2019", link: "https://www.coursera.org/account/accomplishments/verify/VAJDV6UKRY92" },
@@ -75,12 +84,18 @@ export const certificates = [
 
 
 export const projectsData = [
-    { title: "Sorting Visualisation", subtitle: "August 2020", link: "https://mudsahni.github.io/SortingVisualizer/" },
-    { title: "EG Clickstream Spark Pipeline", subtitle: "January 2021", link: "https://github.expedia.biz/Boomdata/clickstream_aep_spark_job.git" },
-    { title: "Java Spring Boot REST API ", subtitle: "January 2021", link: "https://github.expedia.biz/Boomdata/aep_brain_api.git" },
-    { title: "EG Traveler Backend", subtitle: "Q4 2019-Q1 2020", link: "https://github.expedia.biz/Boomdata/eg-traveler-api.git"},
-    { title: "Toxic Sentence Detection", subtitle: "August 2020", link: "https://mudsahni.github.io/toxicSentenceDetector/" },
-    { title: "A/B Testing Pipeline ", subtitle: "June 2018", link: "https://github.expedia.biz/Boomdata/EGTnL.git" },
+    { title: "Sorting Visualisation", subtitle: "August 2016", link: "https://mudsahni.github.io/SortingVisualizer/" },
+    { title: "Toxic Sentence Detection", subtitle: "August 2016", link: "https://mudsahni.github.io/toxicSentenceDetector/" },
+    { title: "Low code spark pipeline template", subtitle: "January 2021", link: "no-link" },
+    { title: "Workflow Service ", subtitle: "September 2021", link: "no-link" },
+    { title: "A/B Test Analysis Website", subtitle: "Q4 2018-Q2 2020", link: "no-link"},
+    { title: "A/B Testing Pipeline ", subtitle: "June 2018", link: "no-link" },
+
+    // { title: "Low code spark pipeline template", subtitle: "January 2021", link: "https://github.expedia.biz/Boomdata/clickstream_aep_spark_job.git" },
+    // { title: "Workflow Service ", subtitle: "January 2021", link: "https://github.expedia.biz/Boomdata/aep_brain_api.git" },
+    // { title: "A/B Test Analysis Website", subtitle: "Q4 2019-Q1 2020", link: "https://github.expedia.biz/Boomdata/eg-traveler-api.git"},
+    
+    // { title: "A/B Testing Pipeline ", subtitle: "June 2018", link: "https://github.expedia.biz/Boomdata/EGTnL.git" },
 
     
 ]
@@ -99,15 +114,20 @@ export const frameworkRatings = [
 ]
 
 export const frameworks = [
+    "Apache Spark",
+    "Spring Boot",
     "Pandas",
     "ReactJS",
     "TensorFlow",
-    "Apache Spark",
     "GraphQL",
     "PyTorch",
     "Flask",
     "AWS",
+    "Docker",
+    "Kubernetes",
+    "Datadog",
     "Azure",
+    "Apache Kafka",
     "MongoDB",
     "NLTK",
     "Prisma",
@@ -117,10 +137,11 @@ export const frameworks = [
 
 export const tags = [
     "Data Engineering",
-    "Data Visualisation",
-    "Web Development",
+    "Microservices",
+    "Full Stack Web Development",
     "Machine Learning",
-    "Deep Learning"
+    "Deep Learning",
+    "Data Visualisation",
 ]
 
 export const schoolPanel = {
@@ -395,6 +416,64 @@ export const expediaExperience = {
     data: [
         {
             positions: [
+                {
+                    key: "sdeiii",
+                    role: "Software Development Engineer III",
+                    date: "Aug 2021-",
+                    team: "Partner Travel Platform",
+                    active: true
+                }
+            ],
+            content: <div>
+                                <em>
+                                    Developing a low-code multi-tenant platform for expedia's various internal product teams and external customers to leverage 
+                                    and use for spinning off their own whitelabeled products.
+                                </em>
+
+                    <List bulleted>
+                <List.Item>
+                        <Item>
+                            <Item.Content>
+
+                                <Item.Description>
+                                    <p>Enabled partner-product onboarding in the travel platform by developing a generic microservice 
+                                        for workflow orchestration and execution. A workflow is a directed acyclic graph with nodes containing types of actions.</p>
+                                    <div>
+
+                                        <Label content="Kotlin" size="small"></Label>
+                                        <Label content="Spring Boot" size="small"></Label>
+                                        <Label content="MongoDB" size="small"></Label>
+                                        <Label content="Kubernetes" size="small"></Label>
+                                    </div>
+                                </Item.Description>
+                            </Item.Content>
+                        </Item>
+                    </List.Item>
+                    <List.Item>
+                        <Item>
+                            <Item.Content>
+
+                                <Item.Description>
+                                    <p>Enabled whitelabel website orchestration and UI creation by creating a mapper microservice between partner inputs and UI components and micro frontends.</p>
+                                    <div>
+
+                                        <Label content="Kotlin" size="small"></Label>
+                                        <Label content="Spring Boot" size="small"></Label>
+                                        <Label content="MongoDB" size="small"></Label>
+                                        <Label content="Kubernetes" size="small"></Label>
+                                    </div>
+                                </Item.Description>
+                            </Item.Content>
+                        </Item>
+                    </List.Item>
+
+                    </List>
+
+                </div>
+        },
+
+        {
+            positions: [
 
                 {
                     key: "asde",
@@ -413,9 +492,9 @@ export const expediaExperience = {
                 {
                     key: "de",
                     role: "Data Engineer III",
-                    date: "Mar 2021—",
+                    date: "Mar 2021—Aug 2021",
                     team: "Behaviour Experimentation Platform",
-                    active: true
+                    active: false
                 }
             ],
             content: <div>
@@ -458,7 +537,7 @@ export const expediaExperience = {
                                         <Label content="Java" size="small"></Label>
                                         <Label content="SQL" size="small"></Label>
                                         <Label content="AWS SQS" size="small"></Label>
-
+                                        <Label content="Apache Kafka" size="small"></Label>
                                     </div>
                                 </Item.Description>
                             </Item.Content>
@@ -472,9 +551,9 @@ export const expediaExperience = {
                                 <Item.Description>
                                     <p>Enabled 25,000+ employees across the entire Expedia Group avail travel benefits by
                                     revamping and developing an internal website for coupon generation and use, account linking,
-                                        and internal financial tracking of employee travel benefits. <a href="https://eg-traveler.com" target="_blank">https://eg-traveler.com</a></p>
+                                        and internal financial tracking of employee travel benefits.</p>
                                     <div>
-                                        <Label content="JavaScript" size="small"></Label>
+                                        <Label content="Typescript" size="small"></Label>
                                         <Label content="ReactJS" size="small"></Label>
                                         <Label content="GraphQL" size="small"></Label>
                                         <Label content="Prisma" size="small"></Label>
@@ -493,14 +572,14 @@ export const expediaExperience = {
 
                                 <Item.Description>
                                     <p>Enabled product teams across Expedia Group to streamline, standardize and accelerate their A/B test analysis and call process
-                                    by creating the backend for a data collection, standardisation, analysis, and visualisation platform
+                                    by creating the full stack for a data collection, standardisation, analysis, and visualisation platform
                                         for {">"}40,000 A/B tests. </p>
                                     <div>
                                         <Label content="Python" size="small"></Label>
                                         <Label content="Python Pandas" size="small"></Label>
                                         <Label content="Numpy" size="small"></Label>
                                         <Label content="JavaScript (NodeJS)" size="small"></Label>
-
+                                        <Label content="ReactJS" size="small"></Label>
                                         <Label content="REST" size="small"></Label>
                                         <Label content="MS SQL Server" size="small"></Label>
                                         <Label content="Azure" size="small"></Label>

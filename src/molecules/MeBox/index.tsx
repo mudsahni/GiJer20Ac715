@@ -19,7 +19,7 @@ export const MeBox: React.FC<MeBoxProps> = ({ imagePath, data }) => {
 
                         <div className="me-box">
                             <Header as="h1" image>
-                                <Image src={imagePath} size='massive' rounded />
+                                <Image src={imagePath} size='massive' rounded hidden />
 
                                 <Header.Content>
                                     <span className="my-name">{data.name}</span>

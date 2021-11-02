@@ -3,9 +3,9 @@
 
 }
 
-.professional-box:last-child {
+/* .professional-box:last-child {
     padding: 0px 0px 64px 32px;
-}
+} */
 
 @media only screen and (max-width: 768px) {
     .professional-box {

@@ -14,11 +14,21 @@ export const OtherBox: React.FC<OtherBoxProps> = ({ data }) => {
             </div>
             <div className="skills-box">
                 {data.skills.map((skill, index) => {
-                    return (
-                        <div className="skill" key={index}>
-                            <Label><div className="label-content"><a href={skill.link} target="_blank">{skill.title}</a><span>{skill.subtitle}</span></div></Label>
-                        </div>
-                    )
+                    
+                        if (skill.link === "no-link") {
+                            return (
+                                <div className="skill" key={index}>
+                                    <Label><div className="label-content"><span>{skill.title}</span><span>{skill.subtitle}</span></div></Label>
+                                </div>
+                            )
+                        } else {
+                            return (
+                                <div className="skill" key={index}>
+                                    <Label><div className="label-content"><a href={skill.link} target="_blank">{skill.title}</a><span>{skill.subtitle}</span></div></Label>
+                                </div>
+                            )
+                        }
+                    
                 })}
             </div>
         </div>
