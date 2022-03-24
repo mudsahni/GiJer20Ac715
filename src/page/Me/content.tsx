@@ -4,10 +4,11 @@ import { Icon, Item, Label, List } from "semantic-ui-react"
 export const MeData = {
     name: "mudit sahni",
     profile: "software engineer",
-    about: <div><p>In my near eight years of professional employment, I've had the opportunity to help build high-impact data-centric products for organizations that are 
-        leaders in travel and research {"&"} advisory. My work has helped Expedia create a new platform as a service (PaaS) business model; enable, scale, and 
-        standardize organization-wide A/B test analysis (with an average of {">"}40,000 active A/B tests running at any point) by creating a reporting platform. 
-        And for Gartner, I have helped increase cross-domain membership retention by ~20% by creating web products for client-side survey analysis and benchmarking.
+    about: <div><p>I've had the opportunity to help build high-impact data-centric products for organizations which are 
+        leaders in their industries. My work in <b>Expedia</b> has been across a diverse range of products and functionalities&mdash;from helping build a 
+        new platform as a service (PaaS) product; to helping enable, scale, and standardize organization-wide A/B test analysis (with an average of {">"}40,000 
+        active A/B tests running at any point). Previously, in Gartner, I have built customer-facing data-centric analytical web products which helped increase 
+        cross-domain membership retention by ~20%.
     .</p>
 
      {/* and drive organization-wide research studies through the implementation of technology based solutions for research problems.</p> */}
@@ -426,8 +427,8 @@ export const expediaExperience = {
             ],
             content: <div>
                                 <em>
-                                    Developing a low-code multi-tenant platform for expedia's various internal product teams and external customers to leverage 
-                                    and use for spinning off their own whitelabeled products.
+                                    Developing a multi-tenant platform to enable Expedia customers to onboard to and use a catalog of white-labeled products. 
+                                    This is a revamp and an expansion of a product which accounts for an excess of 20% of the annual Expedia revenue globally.
                                 </em>
 
                     <List bulleted>
@@ -436,14 +437,18 @@ export const expediaExperience = {
                             <Item.Content>
 
                                 <Item.Description>
-                                    <p>Enabled partner-product onboarding in the travel platform by developing a generic microservice 
-                                        for workflow orchestration and execution. A workflow is a directed acyclic graph with nodes containing types of actions.</p>
+                                    <p>Developing and maintaining micro-services for the partner onboarding journey encompassing product selection, configuration and customization.
+                                        These services are the connecting tissues between an Expedia partner and the various products available to them for use.
+                                    </p>
                                     <div>
 
                                         <Label content="Kotlin" size="small"></Label>
                                         <Label content="Spring Boot" size="small"></Label>
                                         <Label content="MongoDB" size="small"></Label>
                                         <Label content="Kubernetes" size="small"></Label>
+                                        <Label content="Microservices" size="small"></Label>
+                                        <Label content="Greenfield project" size="small"></Label>
+                                        <Label content="Platform as a service (PaaS)" size="small"></Label>
                                     </div>
                                 </Item.Description>
                             </Item.Content>
@@ -454,13 +459,15 @@ export const expediaExperience = {
                             <Item.Content>
 
                                 <Item.Description>
-                                    <p>Enabled whitelabel website orchestration and UI creation by creating a mapper microservice between partner inputs and UI components and micro frontends.</p>
+                                    <p>Enabled 10+ Expedia teams to allow easy customer onboarding by creating a highly available and resilient generic workflow orchestration and execution service.</p>
                                     <div>
 
                                         <Label content="Kotlin" size="small"></Label>
                                         <Label content="Spring Boot" size="small"></Label>
                                         <Label content="MongoDB" size="small"></Label>
                                         <Label content="Kubernetes" size="small"></Label>
+                                        <Label content="Microservices" size="small"></Label>
+                                        <Label content="Greenfield project" size="small"></Label>
                                     </div>
                                 </Item.Description>
                             </Item.Content>
@@ -498,8 +505,7 @@ export const expediaExperience = {
                 }
             ],
             content: <div>
-                <em>Leading the development of the experimentation analytics and reporting platform for the entire expedia organization
-                    by creating big data pipelines for clickstream analytics.</em>
+                <em>Enabled product teams across Expedia Group to easily analyse terabytes of daily web analytics data, and measure {">"}40,000 active A/B tests and by building an analysis and reporting platform.</em>
 
                 {/* <div className="skills-box-title">significant projects</div> */}
                 <List bulleted>
@@ -508,7 +514,7 @@ export const expediaExperience = {
                             <Item.Content>
 
                                 <Item.Description>
-                                    <p>Productionalised sending large amounts of data to Adobe Experience Platform by creating standardised, low code Spark templates.</p>
+                                    <p>Enabled 15+ product teams to easily onboard their web analytics data to our in-house analysis and reporting platform by creating a low-code generic Apache Spark data pipeline for ETL and ELT operations.</p>
                                     <div>
 
                                         <Label content="Apache Spark" size="small"></Label>
@@ -527,8 +533,7 @@ export const expediaExperience = {
                             <Item.Content>
 
                                 <Item.Description>
-                                    <p>Provided easy accessibility and analysis for A/B experimentation by creating Apache Spark data pipelines to collect, coalesce, and standardize
-                                     various datasets (~1TB per day) from the org data lake to Adobe Experience Platform.</p>
+                                    <p>Built a data mobility infrastructure around the extraction, transformation and transportation of real time A/B test data (~1.5-2TB/day) using Apache Spark and Apache Kafka.</p>
                                     <div>
                                         <Label icon="trophy" content="Expedia 'My Hero!' Award" size="small"></Label>
 
@@ -549,8 +554,8 @@ export const expediaExperience = {
                             <Item.Content>
 
                                 <Item.Description>
-                                    <p>Enabled 25,000+ employees across the entire Expedia Group avail travel benefits by
-                                    revamping and developing an internal website for coupon generation and use, account linking,
+                                    <p>Helped 25,000+ employees across the entire Expedia Group avail travel benefits by
+                                    revamping and building an internal website for coupon generation and use, account linking,
                                         and internal financial tracking of employee travel benefits.</p>
                                     <div>
                                         <Label content="Typescript" size="small"></Label>
