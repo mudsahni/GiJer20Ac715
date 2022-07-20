@@ -4,18 +4,16 @@ import { Icon, Item, Label, List } from "semantic-ui-react"
 export const MeData = {
     name: "mudit sahni",
     profile: "software engineer",
-    about: <div><p>I've had the opportunity to help build high-impact data-centric products for organizations which are 
-        leaders in their industries. My work in <b>Expedia</b> has been across a diverse range of products and functionalities&mdash;from helping build a 
-        new platform as a service (PaaS) product; to helping enable, scale, and standardize organization-wide A/B test analysis (with an average of {">"}40,000 
-        active A/B tests running at any point). Previously, in Gartner, I have built customer-facing data-centric analytical web products which helped increase 
-        cross-domain membership retention by ~20%.
-    .</p>
-
-     {/* and drive organization-wide research studies through the implementation of technology based solutions for research problems.</p> */}
-        {/* <p>I'm chasing ‘fluency’ in subjects I love. I try and use all my free time to read and learn about a wide
-        variety of things—from the sciences to literature to history and culture—and all my work time trying to find ways in applying what I've learnt to build
-        something useful. I find myself extremely fortunate that what I find fun, entertaining, and fullfilling is also my profession.
-        </p> */}
+    about: <div><p>I've had the opportunity to build large scale, customer facing products for two organisations&mdash;<b>Gartner</b> and <b>Expedia</b>.</p>
+        <p>
+        Key highlights at <b>Expedia</b>: I'm a part of the team leading a new white-label product offerings platform (PaaP) to strengthen and invigorate Expedia's b2b offerings.
+            As part of the project, I'm leading the design and development of several key services to support partner (customer) and product onboarding on the platform.
+            Previously at Expedia, I built a standardised org-wide platform for A/B test analysis at scale (with an average of {">"}40,000
+        active A/B tests running at any point).
+    </p>
+        <p>
+            Key highlights at <b>Gartner</b>: I built customer facing web products which helped boost membership retentions for several domain-specific research offerings by ~20%.
+        </p>
     </div >
 }
 
@@ -114,9 +112,53 @@ export const frameworkRatings = [
     { icon: "flask.svg", title: "Scikit-learn", rating: 2 },
 ]
 
-export const frameworks = [
-    "Apache Spark",
+export const backendFrameworks = [
     "Spring Boot",
+    "Hibernate",
+    "Express.js",
+    "Next.js",
+    "Python Flask"
+]
+
+export const uiFrameworks = [
+    "ReactJS",
+    "Highcharts.js",
+    "Three.js",
+    "Tailwind UI"
+]
+export const dataFrameworks = [
+    "Apache Spark",
+    "Apache Kafka",
+    "Apache Hadoop",
+    "Apache Airflow",
+    "Python Pandas",
+    "Numpy",
+    "GraphQL",
+    "MongoDB",
+    "PostgreSQL",
+    "MS SQL Server",
+    "Cassandra",
+    "Prisma"
+]
+
+export const machineLearningFrameworks = [
+    "TensorFlow",
+    "PyTorch",
+    "NLTK"
+]
+
+export const cloudFrameworks = [
+    "Docker",
+    "Kubernetes",
+    "Datadog",
+    "Spinnaker",
+    "Jenkins",
+    "AWS",
+    "Azure"
+]
+export const frameworks = [
+    "Spring Boot",
+    "Apache Spark",
     "Pandas",
     "ReactJS",
     "TensorFlow",
@@ -137,9 +179,11 @@ export const frameworks = [
 ]
 
 export const tags = [
-    "Data Engineering",
     "Microservices",
+    "API Design and Development",
+    "Software Architecture",
     "Full Stack Web Development",
+    "Data Engineering",
     "Machine Learning",
     "Deep Learning",
     "Data Visualisation",
@@ -427,8 +471,7 @@ export const expediaExperience = {
             ],
             content: <div>
                                 <em>
-                                    Developing a multi-tenant platform to enable Expedia customers to onboard to and use a catalog of white-labeled products. 
-                                    This is a revamp and an expansion of a product which accounts for an excess of 20% of the annual Expedia revenue globally.
+                                    Designing and developing several micro-services for Expedia's new platform as a product service (called Control Plane) which exposes various products and offerings to both internal and external partners.
                                 </em>
 
                     <List bulleted>
@@ -437,29 +480,44 @@ export const expediaExperience = {
                             <Item.Content>
 
                                 <Item.Description>
-                                    <p>Developing and maintaining micro-services for the partner onboarding journey encompassing product selection, configuration and customization.
-                                        These services are the connecting tissues between an Expedia partner and the various products available to them for use.
+                                    <p>Designed and developed customer facing micro-services to enable product and partner on-boarding, product customisation, billing, and administration.
                                     </p>
                                     <div>
-
                                         <Label content="Kotlin" size="small"></Label>
                                         <Label content="Spring Boot" size="small"></Label>
                                         <Label content="MongoDB" size="small"></Label>
                                         <Label content="Kubernetes" size="small"></Label>
                                         <Label content="Microservices" size="small"></Label>
-                                        <Label content="Greenfield project" size="small"></Label>
+                                        <Label content="Production Ready" size="small"></Label>
                                         <Label content="Platform as a service (PaaS)" size="small"></Label>
                                     </div>
                                 </Item.Description>
                             </Item.Content>
                         </Item>
                     </List.Item>
-                    <List.Item>
+                        <List.Item>
+                            <Item>
+                                <Item.Content>
+                                    <Item.Description>
+                                        <p>Full stack development of several internal admin and monitoring applications for various micro-services.
+                                        </p>
+                                        <div>
+                                            <Label content="Typescript" size="small"></Label>
+                                            <Label content="React" size="small"></Label>
+                                            <Label content="Kubernetes" size="small"></Label>
+                                            <Label content="Fullstack Development" size="small"></Label>
+                                            <Label content="Backstage" size="small"></Label>
+                                        </div>
+                                    </Item.Description>
+                                </Item.Content>
+                            </Item>
+                        </List.Item>
+                        <List.Item>
                         <Item>
                             <Item.Content>
 
                                 <Item.Description>
-                                    <p>Enabled 10+ Expedia teams to allow easy customer onboarding by creating a highly available and resilient generic workflow orchestration and execution service.</p>
+                                    <p>Designed a highly available and resilient workflow orchestration and execution service to enable enable several teams to onboard their products to external and internal partners.</p>
                                     <div>
 
                                         <Label content="Kotlin" size="small"></Label>
@@ -467,12 +525,30 @@ export const expediaExperience = {
                                         <Label content="MongoDB" size="small"></Label>
                                         <Label content="Kubernetes" size="small"></Label>
                                         <Label content="Microservices" size="small"></Label>
-                                        <Label content="Greenfield project" size="small"></Label>
+                                        <Label content="Platform as a service (PaaS)" size="small"></Label>
                                     </div>
                                 </Item.Description>
                             </Item.Content>
                         </Item>
-                    </List.Item>
+                            <Item>
+                                <Item.Content>
+
+                                    <Item.Description>
+                                        <p>Helped drive several services to production ready status by writing detailed documentation, automated end-to-end tests, scripts to maintain hygiene, and configure telemetry notifications.</p>
+                                        <div>
+
+                                            <Label content="Datadog" size="small"></Label>
+                                            <Label content="Splunk" size="small"></Label>
+                                            <Label content="Spinnaker" size="small"></Label>
+                                            <Label content="Jenkins" size="small"></Label>
+                                            <Label content="Microservices" size="small"></Label>
+                                            <Label content="Platform as a service (PaaS)" size="small"></Label>
+                                        </div>
+                                    </Item.Description>
+                                </Item.Content>
+                            </Item>
+
+                        </List.Item>
 
                     </List>
 

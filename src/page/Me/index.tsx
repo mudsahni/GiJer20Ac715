@@ -9,7 +9,7 @@ import {
     frameworkRatings, tags,
     certificateData, expediaPanel,
     gartnerPanel, techMahindraPanel, languages,
-    frameworks,
+    frameworks, backendFrameworks, cloudFrameworks, dataFrameworks, machineLearningFrameworks, uiFrameworks,
     projectsData, certificates, expediaExperience, gartnerExperience, techmahindraExperience, universityPanel, schoolPanel, educationData
 } from './content';
 import { CVMainBox } from '../../molecules/CVMainBox';
@@ -92,7 +92,11 @@ export const Me: React.FC<MeProps> = ({ }) => {
                         <Grid.Column width={5}>
                         <SkillsBox data={{ title: "programming languages", skills: languages }} />
 
-                            <SkillsBox data={{ title: "frameworks & tools", skills: frameworks }} />
+                            <SkillsBox data={{ title: "backend", skills: backendFrameworks }} />
+                            <SkillsBox data={{ title: "frontend", skills: uiFrameworks }} />
+                            <SkillsBox data={{ title: "data centric ", skills: dataFrameworks }} />
+                            <SkillsBox data={{ title: "machine learning ", skills: machineLearningFrameworks }} />
+                            <SkillsBox data={{ title: "others ", skills: cloudFrameworks }} />
 
                             <OtherBox data={{ title: "education", skills: educationData }} />
 
@@ -101,7 +105,7 @@ export const Me: React.FC<MeProps> = ({ }) => {
 
                             <OtherBox data={{ title: "certifications", skills: certificates }} />
 
-                            <SkillsBox data={{ title: "languages", skills: ["English", "Hindi"] }} />
+                            <SkillsBox data={{ title: "languages", skills: ["English", "Hindi", "a smidgen of German"] }} />
 
                             {
                             /* TODO: Comment in later */
